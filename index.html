@@ -6,9 +6,32 @@
     <title>devFury: Covid19 Tracker</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
   
-    
+    <nav id="navbar-covid" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <img src="img/iconlogo.png" style="height: 40px; margin-right: 10px;"  alt="">
+        <a class="navbar-brand" href="#">COVID19 TRACKER</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#map">World</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">Global News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#who">WHO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="map"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-WA-lW3yDMdEIPpwm1rRTI_2aAPCS-yA&callback=initMap">
+    </script>
+
+    <div id="graphs"></div>
+
+    <div id="footer"></div>
+
 </body>
 </html>
